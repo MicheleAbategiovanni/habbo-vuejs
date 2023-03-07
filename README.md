@@ -4,6 +4,7 @@
 
 
 <p align="center">
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/badge/Framework-Vue.js-green" alt="Vue.js"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/badge/boostrap-%5E5.2.2-blue" alt="bootstrap 5.2.2"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>

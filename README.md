@@ -16,4 +16,4 @@ Habbo is one of the most popular virtual worlds on the planet! Meet new people a
 ## About Project
 
 The project is written using the <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>Vue.JS</strong>, <strong>Bootstrap</strong> and <strong>SASS</strong> . <br>
-It tends to mimic the layout and website of Habbo Hotel. <br>
+It tends to mimic the layout and website of <strong>Habbo Hotel</strong> . <br>

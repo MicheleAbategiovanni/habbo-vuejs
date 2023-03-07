@@ -1,4 +1,37 @@
 @use "bootstrap/scss/bootstrap" as *;
 
+@use "@fortawesome/fontawesome-free/css/all.min.css";
+
 // @use "./partials/variables" as *;
 @use "bootstrap-icons/font/bootstrap-icons.css" as *;
+
+body {
+  font-family: "Ubuntu Condensed", "Trebuchet MS", "Lucida Grande",
+    "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+}
+
+.my-nav-logins {
+  background-color: #00334c;
+
+  @media screen and (min-width: 768px) {
+
+    background: rgba(0,0,0,.5);
+    
+  }
+}
+
+.btn-register {
+  background-color: #00813e;
+  border-color: #8eda55;
+  border-width: 2px;
+  box-shadow: 0 3px 0 1px rgb(0 0 0 / 30%);
+
+  &:hover {
+    background-color: #00ab54;
+    border-color: #b9f373;
+  }
+}
+
+.bg-jumbotron{
+    background-color: #25B8EE;
+}

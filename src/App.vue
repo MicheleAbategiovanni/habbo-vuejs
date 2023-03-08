@@ -1,15 +1,17 @@
 <template>
   <TheHeader />
 
-  <h2>Ciao</h2>
+  <Jumbotron />
+
 </template>
 
 
 <script>
 import TheHeader from "./components/TheHeader.vue";
+import Jumbotron from "./components/Jumbotron.vue";
 
 export default {
-  components: { TheHeader },
+  components: { TheHeader, Jumbotron },
 }
 </script>
 

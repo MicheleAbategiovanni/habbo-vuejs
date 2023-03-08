@@ -17,8 +17,35 @@
             </div>
 
             <!-- Div with background img for md -->
-            <div class="d-none d-md-flex">
-                ciao
+            <div class="d-none d-md-flex container ">
+
+                <div class="row">
+
+                    <div class="col">
+                        foto
+                    </div>
+
+                    <div class="col">
+
+                        <div class="row row-cols-2 text-white">
+
+                            <div class="col">
+                                <p>Effettua il login con una di queste opzioni</p>
+
+                                <ButtonJumbotron :button="button" v-for="button, i in store.buttonJumbotron"
+                                    :key="i + '_btnJumbo'" />
+
+                            </div>
+
+                            <div class="col">
+                                <p>O usa la tua email & password</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
 
         </div>
@@ -27,8 +54,17 @@
 
 
 <script>
-export default {
+import { store } from '../store.js';
+import ButtonJumbotron from './ButtonJumbotron.vue';
 
+export default {
+    components: { ButtonJumbotron },
+    data() {
+        return {
+            store,
+        }
+
+    }
 }
 </script>
 
@@ -38,8 +74,25 @@ export default {
     background-color: #25B8EE;
 
     @media screen and (min-width:768px) {
-        background-color: transparent;
-        background-image: url("../assets/hotel-jumbotron.png");
+        background-color: #069;
+        height: 500px;
     }
+}
+
+.d-md-flex {
+    padding-top: 20vh;
+}
+
+.col-hotel {
+    image-rendering: pixelated;
+    background: url("../assets/hotel-jumbotron.png") no-repeat;
+    background-position-y: center;
+    content: '';
+    display: block;
+    position: absolute;
+    height: 100%;
+    left: -100px;
+    top: -100px;
+    width: 849px;
 }
 </style>

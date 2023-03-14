@@ -1,6 +1,6 @@
 <template>
-    <section class="background-jumbotron">
-        <div class="container">
+    <section class="background-jumbotron position-relative  ">
+        <div class="container ">
 
             <!-- Div sky for xs,sm ... -->
             <div class="d-md-none text-center py-5">
@@ -17,15 +17,13 @@
             </div>
 
             <!-- Div with background img for md -->
-            <div class="d-none d-md-flex container ">
+            <div class="d-none d-md-flex row">
 
-                <div class="row">
-
-                    <div class="col">
-                        foto
+                    <div class="col bg-hotel">
+                      
                     </div>
 
-                    <div class="col">
+                    <div class="col position-relative pt-5">
 
                         <div class="row row-cols-2 text-white">
 
@@ -44,9 +42,8 @@
                         </div>
                     </div>
 
-                </div>
-
             </div>
+
 
         </div>
     </section>
@@ -79,20 +76,21 @@ export default {
     }
 }
 
-.d-md-flex {
-    padding-top: 20vh;
-}
+// .d-md-flex {
+//     padding-top: 20vh;
+// }
 
-.col-hotel {
+
+.bg-hotel::after {
     image-rendering: pixelated;
     background: url("../assets/hotel-jumbotron.png") no-repeat;
     background-position-y: center;
-    content: '';
     display: block;
     position: absolute;
     height: 100%;
     left: -100px;
     top: -100px;
     width: 849px;
+    content: '';
 }
 </style>

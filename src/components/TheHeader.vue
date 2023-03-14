@@ -13,7 +13,7 @@
             </div>
 
             <!-- Navbar for md ecc.. -->
-            <div class="position-fixed start-0 end-0 my-nav-logins  py-2 px-3 d-none d-md-flex justify-content-between align-items-center">
+            <div class="position-sticky start-0 end-0 my-nav-logins  py-2 px-3 d-none d-md-flex justify-content-between align-items-center">
                 <div class="container d-flex justify-content-between">
 
                     <div class="pb-3">
@@ -41,4 +41,8 @@
 
 
 <style lang="scss" scoped>
+
+.position-sticky{
+    z-index: 1;
+}
 </style>
